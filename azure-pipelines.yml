@@ -58,7 +58,8 @@ stages:
 
     - task: PublishTestResults@2
       displayName: 'Publish test results'
-      testResultsFiles: '**/TEST-*.xml'
+      inputs:
+        testResultsFiles: '**/TEST-*.xml'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
